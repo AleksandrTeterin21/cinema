@@ -1,5 +1,6 @@
 package com.example.cinemateterin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,8 +17,7 @@ class SignInScreen : AppCompatActivity() {
     }
 
     fun btnstart(view: View) {
-        if(email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty()){
-
-        }
+       val intent = Intent(this@SignInScreen, MainScreen::class.java)
+        startActivity(intent)
     }
 }
